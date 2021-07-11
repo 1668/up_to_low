@@ -1,0 +1,234 @@
+@font-face {
+    font-family: "bukhari script";
+    src: url('assets/bukhari_script/Bukhari\ Script.ttf');
+}
+
+body, footer{
+margin: 0;
+padding: 0;
+}
+
+body{
+    background-color: #FFFAF3;
+}
+
+.fond {
+    background-color: #FAD2CB;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: "bukhari script";
+    color: #001233;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    background-color: #001233 !important;
+    color: white !important;
+}
+
+.contact, .temoignage{
+    color: #6b7383;
+}
+
+.footer{
+    background-color: #001233;
+}
+
+.img-footer{
+    width: 2em;
+
+}
+
+.text-footer{
+    color: white;
+}
+
+#logo-lab{
+    width: 10em;
+}
+
+.image{
+    background: url('assets/newsletter.jpg') no-repeat center center/cover ;
+    height:35em;
+}
+
+
+/* App */
+.block1{
+    background: url("assets/anime/app/fond_section_rose1.png") no-repeat center center/cover;
+    height: auto;
+}
+
+/* Engagement */   
+@media only screen and (min-width: 400px){
+    .fond-engagement{    
+        width: 10em;
+        position: absolute;
+    }
+    
+    .fond-engagement:nth-child(1){
+        left:10em;
+        top:33em;
+        z-index: -1;
+
+    }
+    .fond-engagement:nth-child(2){
+        left: 1em;
+        top: 80em;
+        z-index: 1;
+
+    }
+    .fond-engagement:nth-child(3){
+        left: 12em;
+        top:195em;
+        z-index: 1;
+    }
+}
+
+@media only screen and (min-width: 760px){
+    .fond-engagement{    
+        width: 15em;
+        position: absolute;
+    }
+    
+    .fond-engagement:nth-child(1){
+        top:48em;
+        left: 5em;
+        z-index: 1;
+    
+    }
+    .fond-engagement:nth-child(2){
+        top: 18em;
+        left: 29em;
+        z-index: -1;
+    
+    }
+    .fond-engagement:nth-child(3){
+        top: 79em;
+        left:33em;
+        z-index: 1;
+    }
+}
+
+    @media only screen and (min-width: 1050px){
+        .fond-engagement{    
+        width: 25em;
+        position: absolute;
+    
+    }
+    
+    .fond-engagement:nth-child(1){
+        top:76em;
+        left: 8em;
+        z-index: -1;
+    
+    }
+    
+    .fond-engagement:nth-child(2){
+        top: 20em;
+        left: 60em;
+        z-index: -1;
+    
+    }
+    
+    .fond-engagement:nth-child(3){
+        top: 68em;
+        left: 76em;
+        z-index: 1;
+    
+    }
+}
+
+/* Equipe */
+.background-equipe{
+    background: url("assets/anime/equipe/equipe.png") no-repeat center center/cover;
+}
+.text-equipe{
+    background-color: #fad2cbf1;
+
+}
+@media only screen and (min-width: 400px){
+    .carousel-control-prev,
+    .carousel-control-next{
+        top: 24em;
+        height: 23em;
+
+    }
+    .carousel-control-next{
+        position: absolute;
+        left: 21em;
+    }
+    .carousel-control-prev{
+        position: absolute;
+        left: 1em;
+    }
+}
+@media only screen and (min-width: 750px){
+    .carousel-control-prev,
+    .carousel-control-next{
+        top: 19em;
+        height: 20em;
+    }
+    .carousel-control-next{
+        position: absolute;
+        left: 40em;
+    }
+    .carousel-control-prev{
+        position: absolute;
+        left: 0em;
+    }
+}
+@media only screen and (min-width: 1050px){
+    .carousel-control-prev,
+    .carousel-control-next{
+        top: 35em;
+    }
+    .carousel-control-next{
+        position: absolute;
+        left: 78em;
+    }
+    .carousel-control-prev{
+        position: absolute;
+        left: 3em;
+    }
+}
+
+/* parteniares */
+@media only screen and (min-width: 1050px){
+.partenaires{    
+    position: absolute;
+    width: 20em;
+
+}
+
+.partenaires:nth-child(1){
+    z-index: -1;
+    top:35em;
+    left: 6em;
+
+}
+.partenaires:nth-child(2){
+    top: 80em;
+    left: 68em;
+    z-index: 1;
+
+
+}
+.partenaires:nth-child(3){
+    top: 180em;
+    left: 10em;
+    z-index: 1;
+
+}
+}
+
+@media only screen and (min-width: 400px) and (max-width: 1040px){
+    .partenaires{    
+    display: none;
+}
+
+}

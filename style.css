@@ -1,0 +1,223 @@
+@font-face {
+  font-family: 'bukhari script';
+  src: url('assets/bukhari_script/Bukhari\ Script.ttf');
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  font-family: 'bukhari script';
+  opacity: 50%;
+}
+
+.diamond {
+  position: relative;
+  border-radius: 100%;
+  box-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+  background-image: linear-gradient(to top left, #ddd 0%, #fff 100%);
+  text-align: center;
+  transform-origin: center;
+  transform: rotateZ(45deg);
+  transition: box-shadow 250ms, transform 250ms;
+  animation: pulse 2s infinite;
+}
+
+.item:hover .diamond,
+.item:focus .diamond {
+  transform:  rotateZ(45deg) scale(1.2);
+}
+
+/* animation */
+@keyframes pulse {
+  0% {
+      box-shadow: 0 0 0 0 rgba(255,255,255, 0.5);
+  }
+  30% {
+      box-shadow: 0 0 0 50px rgba(255,255,255, 0);
+  }
+  100% {
+      box-shadow: 0 0 0 0 rgba(255,255,255, 0);
+      }
+  }
+
+@media only screen and (min-width: 400px){
+
+  .info{
+    display:none;
+  }
+  .info2{
+    position: absolute;
+    left: 11em;
+  }
+
+  .diamond {
+    width: 2em;
+    height: 2em;
+  }
+/* position des dots */
+  .dot{
+    position: absolute;
+    z-index: 4;
+  }
+  .dot1{
+    top: 21em;
+    left: 5em;
+  }
+  .dot2{
+    top: 37em;
+    left: 11em;
+  }
+  .dot3{
+    top: 28em;
+    left: 17em;
+  }
+
+/* background */
+  .accueil, .green{
+    position:fixed;
+    height: 39em;
+    top: 8em;
+    z-index: 0;
+  }
+
+/* position des tooltips */
+  .tooltips{
+    position: absolute;
+    z-index: 1;
+    width: 13em;
+  }
+  .tooltips:nth-child(1){
+    top:15em;
+    left: 1em;
+  }
+  .tooltips:nth-child(2){
+    top:32em;
+    left:6em;
+  }
+  .tooltips:nth-child(3){
+    top:22em;
+    left:12em;
+  }
+
+}
+@media only screen and (min-width: 750px){
+  .info{
+    display:none;
+  }
+  .info2{
+    position: absolute;
+    top: 8em;
+    left: 13em;
+  }
+  .diamond {
+    width: 2.5em;
+    height: 2.5em;
+  }
+
+  .dot{
+    position: absolute;
+    z-index: 4;
+  }
+  .dot1{
+    top: 28em;
+    left: 9em;
+  }
+  .dot2{
+    top: 52em;
+    left: 23em;
+  }
+  .dot3{
+    top: 40em;
+    left: 36em;
+  }
+  .accueil, .green{
+    position:fixed;
+    height: 52em;
+    top: 12em;
+    z-index: 0;
+  }
+  
+  .tooltips{
+    position: absolute;
+    z-index: 1;
+  }
+  .tooltips:nth-child(1){
+  top:22em;
+  left: 5em;
+  width: 16em;
+  }
+  .tooltips:nth-child(2){
+  top:46em;
+  left:16em;
+  width: 19em;
+  }
+  .tooltips:nth-child(3){
+  top:34em;
+  left:30em;
+  width: 16em;
+  }
+  
+  }
+
+  @media only screen and (min-width: 1050px){
+    .info{
+      position: absolute;
+      top: 10em;
+      left: 25em;
+      z-index: 10;
+    }
+    .info2{
+      display: none;
+    }
+    .diamond {
+      width: 2.5em;
+      height: 2.5em;
+    }
+    /* position des dots */
+    .dot{
+      position: absolute;
+      z-index: 4;
+    }
+    .dot1{
+      top: 33em;
+      left: 19em;
+    }
+    .dot2{
+      top: 49em;
+      left: 48em;
+    }
+    .dot3{
+      top: 40em;
+      left: 73em;
+    }
+    .accueil, .green{
+      position:absolute;
+      height: 52em;
+      top: 12em;
+      z-index: 0;
+    }
+    
+    .tooltips{
+      position: absolute;
+      z-index: 1;
+    }
+    .tooltips:nth-child(1){
+    top:45em;
+    left: 10em;
+    width: 25em;
+    }
+    .tooltips:nth-child(2){
+    top:62em;
+    left:39em;
+    width: 25em;
+    }
+    .tooltips:nth-child(3){
+    top:50em;
+    left:62em;
+    width: 23em;
+    }
+    
+    }
